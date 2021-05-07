@@ -1,0 +1,23 @@
+li {
+    margin: 10px;
+    }
+#container {
+    padding: 30px;
+    background-color: yellow;
+    }
+
+li.clase1 {
+color: red;
+}
+
+li.clase2 {
+color:rgb(25, 0, 255);
+}
+
+.criaturas {
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}

@@ -1,0 +1,25 @@
+.borde { 
+    border: 1px #000 solid;
+    text-align: center;
+    height: 50px;
+}
+.color1 {
+    background: #eeeeee;
+}
+.color2 {
+    background: #fcc314;
+}
+.color3 {
+    background: hsl(130, 100%, 50%);
+}
+.color4 {
+    background: #295ba7;
+}
+.miclase {
+    display: none;
+  }
+  @media(min-width: 300px) {
+      .miclase {
+        display: block;
+      }
+    }

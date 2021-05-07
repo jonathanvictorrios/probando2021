@@ -1,0 +1,11 @@
+$primary:#b90b0b;
+$secondary:#e37474;
+$success:#7279c5;
+$dark:#030733;
+$font-family-sans-serif:'Barlow Semi Condensed', cursive;
+@media (min-width: 992px) {
+    .alto-100 {
+        height: 100vh;
+    }
+}
+@import "../node_modules/bootstrap/scss/bootstrap";

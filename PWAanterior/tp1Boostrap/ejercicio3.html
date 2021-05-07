@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------Boostrap----------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Ejercicio 3</title>
+
+    <!-- -------------------Estilos-------------------- -->
+    <style>
+        body{
+        background: #3a4750;
+        }
+        .colorBarraSuperior{
+        background: #3a4750;
+        block-size: 10px;
+        }
+        .colorHeader{
+            background: #3d7ea6;
+            
+        }
+        .headerBloques{
+            background: #3d7ea6;
+            block-size: 10px;
+            margin-top: 23px;
+        }
+        .colorTarjeta{
+            background: #303841;
+        }
+        .estiloImagenBiografia{
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+        .estiloTitulosAlbumnes{
+            font-size: 10px;
+        }
+        @media(min-width: 992px){
+            .estiloTitulosAlbumnes{
+                font-size: 30px;
+            }
+        }
+        .colorNav{
+            background:#303841;
+            
+        }
+        .colorFooter{
+            background:#303841;
+        }
+        .colorBotonesDivDinamicas{
+            background-color: chocolate;
+        }
+    
+    
+
+    </style>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <!-- -----------------Header---------------------- -->
+            <div class="col col-lg-4 col-md-4 col-sm-4"></div>
+            <div class="colorHeader col col-lg-4 col-md-4 col-sm-4 mt-2 mb-2 rounded rounded-pill text-center">
+                <h1 class="text-white text-center fw-bold">MUSE</h1>   
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-4 "></div>
+            <!-- ---------------------------------------------------- -->
+
+            <!-- ----------------------Menu----------------------------- -->
+            <div class="col col-lg-12 col-md-12 col-sm-12 ">
+                <nav class="colorNav navbar navbar-expand-lg navbar-dark rounded rounded-3">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="ejercicio1.html">Biografia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ejercicio2.html">Ejercicio 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ejercicio3.html">Ejercicio 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ejercicio4.html">Ejercicio 4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ejercicio5.html">Ejercicio 5</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ejercicio6.html">Ejercicio 6</a>
+                            </li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- -----------------Fin Menu---------------------- -->
+        </div>
+    </header>
+    <!-- -----------------------Contenido--------------------- -->
+    <main class="container-fluid">
+        <div class="row g-2 justify-content-center">
+            <div class="col col-lg-12 col-md-12 col-sm-12">
+
+                <!-- --------------------Tarjeta Boostrap----------------------- -->
+                <div class="colorTarjeta card text-white mb-2 " style="max-width: 100rem;">
+                    <div class="card-body rounded-3">
+                        <!-- -------------------Tabs dinamicas----------------------- -->
+                        <ul class="nav nav-tabs " id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="bg-secondary text-white nav-link active" id="historia-tab" data-bs-toggle="tab" data-bs-target="#historia" type="button" role="tab" aria-controls="hisotira" aria-selected="true">Columnas</button>
+                                
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="bg-secondary text-white nav-link " id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">Influencias</button>
+                            
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="bg-secondary text-white nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Integrantes</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="bg-secondary text-white nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Videos Oficiales</button>
+                            </li>
+                        </ul>
+
+                        <!-- --------------Contenido de tabs dinamicas------------------- -->
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="historia" role="tabpanel" aria-labelledby="historia-tab">
+                                <div class="row p-3">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+                                        <h5>Inicios</h5>
+                                        En 1994, bajo el nombre de Rocket Baby Dolls ganaron su primer concurso de música, 
+                                        tras el que decidieron no ir a la universidad y centrarse en labrarse un futuro 
+                                        profesional en la música. En 1997 la banda se estableció por fin con el nombre de Muse 
+                                        y lanzó su debut homónimo, "Muse" en EP con Dangerous Records. La banda siguió tocando 
+                                        en varios locales, y en 1998 ya tenían una buena base de seguidores en Londres, así que 
+                                        dieron sus primeros conciertos en la ciudad del Támesis y en Manchester. Conocieron a 
+                                        Dennis Smith, quien les llevo a su estudio en Cornualles, donde grabaron su segundo EP, 
+                                        "Muscle Museum EP". Esta pieza atrajo la atención de la prensa especializada, e hizo que 
+                                        Smith fundara la discográfica Taste Media especialmente para Muse, con la que la banda 
+                                        sacaría tres discos. Muchas compañías se mostraban reticentes a su sonido "demasiado 
+                                        parecido a Radiohead", pero Maverick Records -propiedad de la cantante de fama mundial 
+                                        Madonna- les fichó para el mercado estadounidense y les llevó de gira por los EEUU. A 
+                                        la vuelta de su paso por el festival CMJ de Nueva York, Taste Media había conseguido 
+                                        contratos con más casas de discos de Europa y Australia.
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 p-3 ">
+                                        <h5>Showbiz (1999)</h5>
+                                        Tras los éxitos de sus singles "Cave" y "Uno", en Octubre de 1999, Muse lanzó su álbum debut, 
+                                        "Showbiz". Éste fue producido por John Leckie, quien fuera también productor del disco "The 
+                                        Bends" de Radiohead. A raíz de estos hechos surgieron algunas comparaciones entre ambos grupos 
+                                        por críticos y amantes de la música; describiendo a Muse como una simple copia del grupo liderado 
+                                        por Thom Yorke. Pero estas críticas no detuvieron su progreso. Sus singles "Muscle Museum" y 
+                                        "Sunburn" tuvieron gran acogida entre el público, juntamente con "Unintended", que llegó a 
+                                        encabezar las listas de éxitos.
+                                        Se vendieron 700.000 copias del álbum a nivel mundial, y todavía ahora sigue vendiéndose. Muse 
+                                        publicó también dos box sets: "Showbiz box set" (que salió a la venta únicamente en Francia, y 
+                                        que contenía todas las copias de sus singles) y "Random 1-8 box set" (que contiene ocho caras b, 
+                                        publicado tan solo en Japón). Un año lleno de éxitos, que terminó con su nominación a los Brit 
+                                        Awards por sus actuaciones, aunque finalmente no consiguieran ganar.
+                                    </div> 
+                                    <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+                                        <h5>Origin of Simmetry (2001)</h5>
+                                        John Leckie volvió a aparecer junto con Dave Botrill para producir su segundo álbum de la banda, 
+                                        "Origin of Symmetry" (2001), que consiguió llevarla al estrellato. El primer single de su nuevo 
+                                        álbum, "Plug in Baby" alcanzó el número 11 de las listas, el puesto más alto para un single de 
+                                        Muse. Su segundo single "New born", también alcanzó el número 20. Matt explicó el cambio de 
+                                        dirección: “Cuando grabamos el primer EP tan solo hicimos algunos bolos en Londres, sin giras. 
+                                        Hemos aprendido mucho sobre cómo queremos ser saliendo de gira con otros grupos, por su forma 
+                                        de actuar en el escenario. Si hemos grabado el disco de la misma manera que ellos, debería 
+                                        preocuparme que sonara igual. Hemos usado muchos efectos, suena mucho más atmosférico.” Su 
+                                        sonido era más oscuro y duro, con el bajo de Wolstenholme frecuentemente distorsionado, sintetizado. 
+                                        La banda experimentó con nuevos instrumentos, como un órgano de iglesia. Maverick no quiso 
+                                        lanzar el álbum original en los Estados Unidos -pensaba que la voz de Bellamy no era "adecuada 
+                                        para la radio"- y pidió a la banda que cambiara algunas canciones antes de su lanzamiento americano.
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-6 p-3">
+                                        <h5>Absolution (2003)</h5>
+                                        El grupo se tomó otro descanso para grabar su tercer álbum, pero esta vez dejaron a John Leckie 
+                                        para trabajar con Paul Reeve, John Corfield y Rich Costey. Matthew declaró sobre Rich: “En un 
+                                        principio creímos que era el hombre idóneo para trabajar con las canciones rock. Anteriormente 
+                                        había mezclado algunas canciones de rock geniales, pero mientras tanto nos había estado enviado 
+                                        discos de otros artistas con los que había trabajado; y estaba tratando de convencernos para 
+                                        hacer todo el álbum. Acabó por embellecer por completo el álbum, entendiendo a la perfección 
+                                        lo que tratábamos de conseguir."
+                                        El álbum iba a ser constructivo, pero en ese momento los Estados Unidos e Inglaterra entraron 
+                                        en guerra con Iraq y todo cambió: “Empezamos con una orquesta al completo, experimentando,” dice 
+                                        Matthew. “Aunque acabamos decidiendo volver a nuestras raíces, regrabando algún material con la 
+                                        orquesta, con un tono más bajo. El álbum suena mucho más duro de lo que esperábamos. En términos 
+                                        generales, el mundo ha cambiado en el último año con los acontecimientos que han sucedido. No es 
+                                        que seamos una banda política, pero creo que es imposible eludir tales cosas.”
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <br>
+                                <p>
+                                    Parte del éxito de Muse reside en la gran capacidad interpretativa y 
+                                    compositiva de sus integrantes. Es una banda conocida por abarcar y 
+                                    mezclar diversos géneros y corrientes musicales. Sus influencias originales 
+                                    incluyen artistas como Nirvana, Pink Floyd, Rage Against The Machine, 
+                                    Rush,​ Deftones, The Smashing Pumpkins, Jeff Buckley​ y Jimi Hendrix; 
+                                    además de la influencia de compositores clásicos, especialmente, aquellos 
+                                    de la era romántica, tales como Sergéi Rajmáninov, Franz Liszt y Frédéric Chopin.​ 
+                                    Adicionalmente la música latina ha tenido una influencia considerable en el sonido 
+                                    de la banda. Posteriormente la banda ha sido influenciada por agrupaciones como U2, 
+                                    Depeche Mode, INXS y Queen.
+                                </p>
+                                <p>    
+                                    Varios críticos hicieron comparaciones entre el sonido de Muse con el sonido 
+                                    de la banda inglesa Radiohead, especialmente la voz de Bellamy. Aunque este ha 
+                                    declarado que "no le gusta mucho" la música de la banda de Oxford y atribuye 
+                                    las similitudes al hecho de que él y el cantante de Radiohead son notablemente 
+                                    influenciados por el músico Jeff Buckley.
+                                </p>
+                                <p>
+                                    El Diario La República publicó en junio de 2013 la clara influencia musical y 
+                                    estilo de Radiohead sobre bandas creadas en la década de los 90's. Notablemente 
+                                    Muse es casi diez años más joven que la banda de Oxford, incluso Matthew Bellamy, 
+                                    pretendía imitar la voz de Thom Yorke, pero ambos tienen registros de voz distintos. 
+                                    Mientras, el tono de Bellamy es más aguda e hiriente a rasgo de Tenor dramático, 
+                                    el de Yorke tiene mucho más matices (denota lamento, ira, nostalgia) y finas 
+                                    expresiones al rasgo de Tenor, por lo cual el debate siempre está abierto.
+                                </p>
+                                <p>
+                                    Matt Bellamy, quien suele llevar el canto principal, ha demostrado tener una 
+                                    voz enérgica tanto en el registro de voz de pecho como en el de voz de cabeza. 
+                                    Su falsete recuerda a los críticos sobre grandes vocalistas de la música rock 
+                                    como Jeff Buckley y Freddie Mercury.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <br>
+                                <div class="row g-2">
+                                    <div class="col col-lg-2">
+                                        <div class="card bg-dark" style="width: 15rem;">
+                                            <img class="card-img-top" src="imagenes/integrantes/math.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Matt Bellamy</h5>
+                                            <p class="card-text">Voz, guitarra, teclado, sintetizador, keytar (1994-presente) </p>                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-2">
+                                        <div class="card bg-dark" style="width: 15rem;">
+                                            <img class="card-img-top" src="imagenes/integrantes/dominic.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Dominic Howard</h5>
+                                            <p class="card-text">Batería y percusión, sintetizador, coros  (1994-presente)</p>                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-1">
+                                        <div class="card bg-dark" style="width: 15rem;">
+                                            <img class="card-img-top" src="imagenes/integrantes/christopher.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Christopher Wolstenholme</h5>
+                                            <p class="card-text">Bajo, guitarra, teclados (1994-presente)</p>                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="row p-3">
+                                    <div class="row">
+                                        
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 col-md-6">
+                                        <div class="ratio ratio-16x9">
+            
+                                            <iframe src="https://www.youtube.com/embed/azAEHCQgcUI" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 col-md-6">
+                                        <div class="ratio ratio-16x9">
+            
+                                            <iframe src="https://www.youtube.com/embed/QQ_3S-IQm38" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 col-md-6">
+                                        <div class="ratio ratio-16x9">
+            
+                                            <iframe src="https://www.youtube.com/embed/b4ozdiGys5g" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 col-md-6">
+                                        <div class="ratio ratio-16x9">
+            
+                                            <iframe src="https://www.youtube.com/embed/Ek0SgwWmF9w" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 col-md-6">
+                                        <div class="ratio ratio-16x9">
+            
+                                            <iframe src="https://www.youtube.com/embed/tjm3NyQ6DYw" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 col-md-6">
+                                        <div class="ratio ratio-16x9">
+            
+                                            <iframe src="https://www.youtube.com/embed/YkB9a_DR-7A" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 col-md-6">
+                                        <div class="ratio ratio-16x9">
+            
+                                            <iframe src="https://www.youtube.com/embed/yj8Xpdx60Ws" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 col-md-6">
+                                        <div class="ratio ratio-16x9">
+            
+                                            <iframe src="https://www.youtube.com/embed/I5sJhSNUkwQ" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 col-md-6">
+                                        <div class="ratio ratio-16x9">
+            
+                                            <iframe src="https://www.youtube.com/embed/TPE9uSFFxrI" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 col-md-6">
+                                        <div class="ratio ratio-16x9">
+            
+                                            <iframe src="https://www.youtube.com/embed/R8OOWcsFj0U" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 col-md-6">
+                                        <div class="ratio ratio-16x9">
+            
+                                            <iframe src="https://www.youtube.com/embed/w8KQmps-Sog" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 col-md-6">
+                                        <div class="ratio ratio-16x9">
+            
+                                            <iframe src="https://www.youtube.com/embed/dbB-mICjkQM" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 col-md-6">
+                                        <div class="ratio ratio-16x9">
+            
+                                            <iframe src="https://www.youtube.com/embed/3dm_5qWWDV8" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 col-md-6">
+                                        <div class="ratio ratio-16x9">
+            
+                                            <iframe src="https://www.youtube.com/embed/eMqsWc8muj8" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- --------------Fin Contenido de tabs dinamicas------------------- -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!----------------Footer--------------------->
+    <footer class="container-fluid">
+        <div class="row">
+                <div class="colorFooter col-lg-12  mb-2 rounded text-center">
+                    <p class="text-center text-white mt-2 mb-1">
+                        Rios Jonathan Victor
+                        <br>
+                        Programacion Web Avanzada
+                        <br>
+                        2021
+                    </p> 
+                </div>
+        </div>
+    </footer>
+    
+
+
+
+<!-- --------------Script------------------- -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>        
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>  
+</body>
+
+</html>
+
+
+

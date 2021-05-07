@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Link del commit de github: https://github.com/jonathanvictorrios/PWA/commit/3d7753c1d14e221ca0a9075ec3a507939e3308a5 -->
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------Boostrap----------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Ejercicio 1</title>
+   
+    <!-- -------------------Estilos-------------------- -->
+    <style>
+        body{
+        background: #3a4750;
+        }
+        .colorBarraSuperior{
+        background: #3a4750;
+        block-size: 10px;
+        }
+        .colorHeader{
+            background: #3d7ea6;
+            
+        }
+        .headerBloques{
+            background: #3d7ea6;
+            block-size: 10px;
+            margin-top: 23px;
+        }
+        .colorTarjeta{
+            background: #303841;
+        }
+        .estiloImagenBiografia{
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+        .estiloTitulosAlbumnes{
+            font-size: 10px;
+        }
+        @media(min-width: 992px){
+            .estiloTitulosAlbumnes{
+                font-size: 30px;
+            }
+        }
+        .colorNav{
+            background:#303841;
+            
+        }
+        .colorFooter{
+            background:#303841;
+        }
+
+    </style>
+     
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row ">
+                <!-- -----------------Header---------------------- -->
+                <div class="col col-lg-4"></div> <!-- Esta linea es para ubicar el banner de muse en el medio -->
+
+                <div class="colorHeader col col-lg-4 col-md-4 mt-2 mb-2 rounded rounded-pill text-center">
+                    <h1 class="text-white text-center fw-bold">MUSE</h1>   
+                </div>
+
+                <div class="col col-lg-4"></div> <!-- Esta linea es para ubicar el banner de muse en el medio -->
+                <!-- ----------------------Menu----------------------------- -->
+                <div class="col col-lg-12">
+                    <nav class="colorNav navbar navbar-expand-lg navbar-dark rounded rounded-3">
+                        <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Biografia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ejercicio2.html">Ejercicio 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ejercicio3.html">Ejercicio 3</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ejercicio4.html">Ejercicio 4</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ejercicio5.html">Ejercicio 5</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ejercicio6.html">Ejercicio 6</a>
+                                </li>
+                            
+                            </ul>
+                        </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- -----------------Fin Menu---------------------- -->
+        </div>
+    </header>
+    <main class="container-fluid">
+        <div class="row g-2 justify-content-center">
+            <div class="col col-lg-12 col-md-12 col-sm-12">
+                <div class="colorTarjeta card text-white mb-2 " style="max-width: 100rem;">
+                    <div class="card-header "><h2>Biografia</h2></div>
+                    <div class="card-body rounded-3">
+                        <img src="imagenes/museBiog.jpg" class="estiloImagenBiografia img-fluid float-start" alt="Responsive">
+                            
+                            <p class="text-justify ">
+                                La banda musical "Muse", se formó en el año 1994, en la ciudad de Teignmoouth, en el Reino Unido. 
+                                Los componentes de la banda que comenzaron con el grupo fueron, los músicos, Dominic Howard tocando 
+                                la batería, Matthew Bellamy que toca la guitarra y el piano a la vez de que pone la voz y edita las 
+                                canciones, y Christopher Woltenholme, que pone los coros y taca el bajo, también esta con ellos el músico 
+                                Morgan Nicholls, que colabora en algunos conciertos en directo tocando los teclados.  
+                            </p>
+                            <p class="text-justify">
+                                La banda musical tiene un género marcado de rock, aunque en algunos de sus 
+                                álbumes han desarrollado varios tipos de estilos distintos, como el heavy metal, 
+                                rock electrónico, rock espacial o rock progresivo entre otros.
+                            </p>
+                            <p class="text-justify">
+                                Los componentes del grupo, fueron desarrollando y editando diversas 
+                                canciones para un primer álbum, pero antes querían probar que tipo de aceptación 
+                                tendrían estas entre el público, por lo que realizaron diversas actuaciones y algunos 
+                                conciertos, creándose un gran grupo de fans.
+                            </p>   
+                            <p class="text-justify">
+                                Después de unos años, y de considerar que su música era bien acogida, "Muse", 
+                                se reunió en un antiguo molino para grabar lo que fue su primer álbum con el nombre de 
+                                "Showbiz", el cual salió a principios del mes de octubre del año 1999.
+                            </p>
+                            <p class="text-justify">
+                                El disco enseguida tuvo muy buena aceptación entre el público, 
+                                logrando estar el tercer puesto del ranking de aquel tiempo.
+                            </p>
+                            <p class="text-justify"> La música del grupo gustaba mucha, tanta que atrajo 
+                                la atención de varios promotores, entre los que se encontraba Dennis Smith, 
+                                representante de la revista musical NME, el cual les hizo un contrato 
+                                para sus siguientes álbumes.</p>
+                            <p class="text-justify">Gracias a este contrato "Muse", realizo una gira donde 
+                                serian teloneros de diversas bandas, donde estaban "Red hot Chili Pepper" 
+                                o "Foo Fighters", en los Estados Unidos.</p>
+                            <p class="text-justify">A comienzos de la década del 2000, la banda se vuelve 
+                                a reunir para editar su segundo álbum, este llevó el nombre de "Origin of Symmetry". 
+                                En este nuevo álbum el grupo empleo técnicas hasta el momento poco oídas, como el 
+                                órgano de iglesia, o riff en la guitarra pausados.</p>
+                            <p class="text-justify">Poco después, el grupo volvió a editar un DVD, este, llevó el 
+                                nombre de "Hullabaloo Soundtrack", que fue una actuación en directo en Le Zenith, en Paris.</p>
+                            <p class="text-justify">En el año 2003, la banda volvió a lazar un nuevo álbum "Absolutión", donde 
+                                "Muse", seguía mezclando en su música, el estilo clásico y el heavy. En muchos de sus sencillos 
+                                se puede destacar las letras de origen político, sobre todo por la entrada del Reino Unido en 
+                                la Guerra de Irak.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="colorFooter col-lg-12 col-md-4 mb-2 rounded text-center">
+                <p class="text-center text-white mt-2 mb-1">
+                    Rios Jonathan Victor
+                    <br>
+                    Programacion Web Avanzada
+                    <br>
+                    2021
+                </p> 
+            </div>
+        </div>
+    </footer>
+
+<!-- ----------------------------Scripts----------------------- -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>        
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>  
+
+</body>
+</html>

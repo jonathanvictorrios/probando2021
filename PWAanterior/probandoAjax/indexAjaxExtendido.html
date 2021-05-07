@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi primer codigo con AJAX</title>
+  <!--
+<script>
+        function showHint(str) {
+          if (str.length == 0) {
+            document.getElementById("sugerencias").innerHTML = "";
+            return;
+          } else {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("sugerencias").innerHTML = this.responseText;
+              }
+            };
+            xmlhttp.open("get", "conectadb.php?pais=" + str, true);
+            xmlhttp.send();
+          }
+        }
+        </script>
+-->
+
+
+</head>
+
+<body>
+  <p><b>Ingrese el identificador del pais:</b></p>
+  <form action="">
+    <label for="fname">Pais:</label>
+    <!--
+        <input type="text" id="pais" name="pais" onkeyup="showHint(this.value)">
+        -->
+    <input type="text" id="pais" name="pais">
+
+  </form>
+  <div class="row">
+    <div id="content" class="col-lg-12">
+      <form class="row" action="" method="post">
+        <div class="form-group col-lg-3">
+          <label for="provincias">Provincias</label>
+          <select name="provincias" id="provincias" class="form-control">
+            <option value="1">Neuquen</option>
+            <option value="2">Rio Negro</option>
+            <option value="3">La Pampa</option>
+            <option value="4">Chubut</option>
+            <option value="5">Santa Cruz</option>
+            <option value="6">Tierra del Fuego</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </div>
+  <p>Sugerencias: <span id="sugerencias"></span></p>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+
+
+    $(function () {
+
+      //AJAX con get
+      $('#pais').keyup(function () {
+        var id_p = this.value;
+        var url = "conectadb-get.php?pais=" + id_p;
+
+        /*
+        $.get(url,function(data, status){
+          $("body").append(data);
+      
+          alert("Data: " + data + "\n Status: " + status);
+  });
+  });
+  */
+
+        $.ajax({
+          url: url,
+          type: 'GET',
+          beforeSend: function () {
+            alert("El pais es " + id_p);
+          },
+          success: function (data) {
+            $('body').append(data);
+          },
+          error: function (xhr, status, error) {
+            $('body').append(error);
+          },
+
+        });
+      });
+
+        //AJAX con post
+        $('#pais').on("change", function () {
+          var id_paisscript = this.value;
+          //alert("El pais es " + id_paisscript);
+          $.post("conectadb-post.php", { id_p: id_paisscript }, function (data, status) {
+            console.log(status);
+            $('#provincias').html(data);
+          });
+        });
+      });
+  </script>
+</body>
+
+</html>

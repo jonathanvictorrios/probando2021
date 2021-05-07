@@ -1,0 +1,22 @@
+{
+  "name": "pwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wtfranco22/PWA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wtfranco22/PWA/issues"
+  },
+  "homepage": "https://github.com/wtfranco22/PWA#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3"
+  }
+}
